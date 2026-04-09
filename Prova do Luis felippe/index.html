@@ -1,31 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <script src="script"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Prova 15/04</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    <div>
-        <h1>Discografia Frank Ocean</h1>
-        <nav>
-            <ul>
-            <li><a class="menu" href="#">Biografia</a></li>
-            <li> <a class="menu" href="#">Discografia</a></li>
-            <li> <a class="menu" href="#">Feats</a></li>
-            </ul>
-        </nav>
-    </div>
-    </header>
+        <!--cabecalho-->
+  <header>
+    <div class="container">
 
-    <h2>LIsta De Tarefas</h2>
-    <input type="text" id="input0">
-    <ul id="lista"></ul>
-    <link rel="stylesheet" href="style.css">
+      <div class="logo">
+      <img src="assets/logo.png" alt="logo frank Ocean">
+      <h1>Frank Ocean</h1>
+    </div>
+
+
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Biografia</a></li>
+          <li><a href="#">Discografia</a></li>
+          <li><a href="#">Feats</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> 
+
+        <!--conteudo principal-->
+    <main class="container">
+        <h2>Biografia</h2>
+
+    <div class="card-container">
+        <div class="card">
+        <div class="frank">
+             <img src="assets/logo.png" alt="gon_pose" class="gon">
+                 <p>
+
+                 </p>
+       </div>
+        </div>
+         </div>
+
+        <h2>Discografia</h2>
+
+    <div class="card-container">
+        <div class="card">
+        <div class="frank-container">
+             <img src="assets/logo.png" alt="gon_pose" class="gon">
+                 <p>
+
+                 </p>
+       </div>
+        </div>
+         </div>
+       
+        <h2>Feats</h2>
+
+        <div class="card-container">
+        <div class="card">
+        <div class="frank">
+             <img src="assets/logo.png" alt="gon_pose" class="gon">
+                 <p>
+
+                 </p>
+       </div>
+        </div>
+         </div> 
+        
+
+    
+    </main>
+
+
+  <main class="list">
+
+    <h3>Lista de Tarefas</h3>
+
+    <input type="text" id="input" placeholder="Digite uma tarefa...">
+
+    <button id="btnAdicionar">Adicionar uma tarefa</button>
+
+    <ul id="lista"> </ul>
+
+  </main>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
