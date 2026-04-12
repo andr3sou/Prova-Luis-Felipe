@@ -76,6 +76,18 @@ main {
   padding: 50px ;
 }
 
+.frank-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.frank {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
 .card-container {
  display: grid;
   gap: 25px;
@@ -101,6 +113,89 @@ main {
 
 /* lista */
 
+
+.list {
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  margin-right: 10px;
+}
+
+#btnAdicionar {
+  padding: 5px 10px;
+  background-color: rgb(95, 196, 77);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btnAdicionar:hover {
+  background-color: rgb(62, 149, 53);
+}
+
+#lista {
+  list-style: none;
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+#lista li {
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset {
+
+  padding: 5px;
+  background-color: orangered;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* footer */
+
+footer {
+  background-color: rgb(62, 149, 53);
+  color: orangered;
+  text-align: center;
+  padding: 2px 0;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
 
 
 /* tentativa de adaptacao para celular */
