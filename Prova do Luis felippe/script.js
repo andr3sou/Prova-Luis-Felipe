@@ -2,21 +2,43 @@ let btnAdicionar = document.getElementById("btnAdicionar")
 let Lista = document.getElementById("lista")
 let input = document.getElementById("input")
 
-btnAdicionar.addEventListener ("click", function(){
-  
+    //lista de tarefas
+
+btnAdicionar.addEventListener("click", function(){
+
+        if (input.value.trim() === ""){
+        alert("Digite uma musica, por favor")
+
+        return; 
+        }
+
     let AdicionarTarefa = document.createElement("li")
     AdicionarTarefa.textContent = input.value
-    Lista.appendChild(AdicionarTarefa)
 
-    //Botao pra remover item da lista 
-    
     let ButtonRemove = document.createElement("button")
-    AdicionarTarefa.appendChild(ButtonRemove)
     ButtonRemove.textContent = "X"
     ButtonRemove.classList.add("remove")
 
-    ButtonRemove.addEventListener ("click", function(){
-    AdicionarTarefa.remove()
-    
-  })
+    ButtonRemove.addEventListener("click", function(){
+        AdicionarTarefa.remove()
+    })
+
+    AdicionarTarefa.appendChild(ButtonRemove)
+    Lista.appendChild(AdicionarTarefa)
+
+    input.value = ""
 })
+
+    //botao de reset de td a lista
+
+   let buttonReset = document.createElement("button")
+    buttonReset.textContent = "Resetar"
+    buttonReset.classList.add("reset")
+
+    document.querySelector(".controls").appendChild(buttonReset)
+
+    buttonReset.addEventListener("click", function () {
+    Lista.innerHTML = ""
+})
+
+
