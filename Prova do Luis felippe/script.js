@@ -7,7 +7,7 @@ let input = document.getElementById("input")
 btnAdicionar.addEventListener("click", function(){
 
         if (input.value.trim() === ""){
-        alert("Digite uma musica, por favor")
+        alert("Digite seu motivo, por favor, ele pode realmente voltar :(")
 
         return; 
         }
